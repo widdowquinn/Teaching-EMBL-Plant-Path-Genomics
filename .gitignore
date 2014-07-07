@@ -1,0 +1,10 @@
+*~
+.DS_Store
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+Pritchard_2014-07-08_Keynote.pdf

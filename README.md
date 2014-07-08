@@ -13,4 +13,4 @@ This repository contains PowerPoint slides and demonstration materials for my ke
 
 ## Slides
 
-There are two presentations: the "Cinema Release", and the "Director's Cut". As ever, I got overexcited and prepared far too many slides: this version of the presentation is the "Director's Cut" - it's not necessarily better, but there is more material in it. The version where I tried to fit my presentation into 60min is the "Cinema Release".
+There are two presentations: the "Cinema Release", and the "Director's Cut". As ever, I got overexcited and prepared far too many slides: this version of the presentation is the "Director's Cut" - it's not necessarily better, but there is more material in it. The version where I tried (and failed) to fit my presentation into 60min is the "Cinema Release".

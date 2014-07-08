@@ -14,6 +14,8 @@ ipython notebook
 
 and click on the filename `pi_two_speed.ipynb`, to start the notebook.
 
+(Example output can be viewed at [nbviewer](http://nbviewer.ipython.org/github/widdowquinn/Teaching-EMBL-Plant-Path-Genomics/blob/master/data/Phytophthora/pi_two_speed.ipynb))
+
 ## Files
 
 * `pi_two_speed.ipynb` - the iPython notebook with example code

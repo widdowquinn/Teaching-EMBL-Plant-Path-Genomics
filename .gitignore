@@ -8,3 +8,4 @@
 *.synctex.gz
 *.toc
 Pritchard_2014-07-08_Keynote.pdf
+.ipynb_checkpoints/

@@ -14,6 +14,8 @@ ipython notebook
 
 and click on the filename `pred_acc.ipynb`, to start the notebook.
 
+(Example output can be viewed at [nbviewer](http://nbviewer.ipython.org/github/widdowquinn/Teaching-EMBL-Plant-Path-Genomics/blob/master/data/Pba/rbbh/pba_rbh.ipynb))
+
 ## Files
 
 * `pba_rbh.ipynb` - the iPython notebook with example code for rendering genome comparisons with `GenomeDiagram`

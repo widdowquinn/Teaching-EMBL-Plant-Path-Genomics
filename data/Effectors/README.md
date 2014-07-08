@@ -14,6 +14,8 @@ ipython notebook
 
 and click on the filename `pred_acc.ipynb`, to start the notebook.
 
+(you can see example output at [nbviewer](http://nbviewer.ipython.org/github/widdowquinn/Teaching-EMBL-Plant-Path-Genomics/blob/master/data/Effectors/pred_acc.ipynb))
+
 ## Files
 
 * `pred_acc.ipynb` - the iPython notebook with example code

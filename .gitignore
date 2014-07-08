@@ -9,3 +9,5 @@
 *.toc
 Pritchard_2014-07-08_Keynote.pdf
 .ipynb_checkpoints/
+base_diagram_*
+top_rbh.png

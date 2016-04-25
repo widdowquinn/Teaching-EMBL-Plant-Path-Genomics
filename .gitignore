@@ -1,0 +1,6 @@
+# Exclude OSX auxiliary files
+.DS_Store
+
+# Exclude temporary files
+*~
+

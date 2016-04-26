@@ -3,4 +3,4 @@
 
 # Exclude temporary files
 *~
-
+.ipynb_checkpoints

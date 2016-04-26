@@ -119,5 +119,14 @@ The following packages will be downloaded:
 […]
 ```
 
+### Virtual environment for the course
 
+The course examples will be run in a virtual environment using Anaconda Python. This can be instantiated with:
 
+```
+conda create -n pathogen_genomics python=3 biopython
+```
+
+which will create a new virtual environment with the following essential packages:
+
+* biopython

@@ -49,12 +49,12 @@ Leighton Pritchard, The James Hutton Institute
 
 ### GenBank *vs.* RefSeq
 
-* GenBank
+* **GenBank**
   * part of International Nucleotide Sequence Database Collaboration (INSDC)
   * records 'owned' by submitter
   * may include redundant information
   
-* RefSeq
+* **RefSeq**
   * not part of INSDC
   * records derived from GenBank, 'owned' by NCBI
   * intended to be non-redundant

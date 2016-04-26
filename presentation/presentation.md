@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./images/hutton_background.png" -->
+<!-- .slide: data-background="./images/pba_400_circular.png" -->
 
 # 2016-06-23: Bioinformatics of Plants and Plant Pathogens
 
@@ -6,22 +6,31 @@ Leighton Pritchard, The James Hutton Institute
 
 ---
 
+<!-- .slide: data-background="./images/hutton_background.png" -->
+
 ## Pathogen Genome Data
 
 ----
 
+<!-- .slide: data-background="./images/hutton_background.png" -->
+
 ### What can pathogen genome data do for you?
 
 * Catalogue of genome components
-* Differences in genome complement: hypotheses for function
+  * parts lists/wiring diagrams for systems/synthetic biology
+* Differences in genome complement
+  * hypotheses for functional genomics
 * Characteristic signals for diagnostics and epidemiology
-* Parts lists/wiring diagrams for systems and synthetic biology
 
 ---
+
+<!-- .slide: data-background="./images/ensembl_protists.png" -->
 
 ## Data Sources
 
 ----
+
+<!-- .slide: data-background="./images/hutton_background.png" -->
 
 ### NCBI
 
@@ -35,6 +44,8 @@ Leighton Pritchard, The James Hutton Institute
     * [GenBank](ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/bacteria/Ralstonia_solanacearum/latest_assembly_versions/)
 
 ----
+
+<!-- .slide: data-background="./images/hutton_background.png" -->
 
 ### GenBank *vs.* RefSeq
 
@@ -50,15 +61,33 @@ Leighton Pritchard, The James Hutton Institute
 
 ----
 
+<!-- .slide: data-background="./images/hutton_background.png" -->
+
 ### Ensembl
 
 [http://www.ensembl.org](http://www.ensembl.org)
 
 * Automated annotation on selected genomes
 * Specialised sub-collections
-  * Ensembl Plants [http://plants.ensembl.org](http://plants.ensembl.org/index.html)
   * Ensembl Protists [http://protists.ensembl.org/](http://protists.ensembl.org/)
   * Ensembl Bacteria [http://bacteria.ensembl.org/](http://bacteria.ensembl.org/)
   * Ensembl Fungi [http://fungi.ensembl.org/](http://fungi.ensembl.org/)
 * Downloadable
   * e.g. EnsemblProtists [ftp://ftp.ensemblgenomes.org/pub/protists/](ftp://ftp.ensemblgenomes.org/pub/protists/)
+* Comparative genomics! e.g.
+  * [*Phytophthora* genomic alignments (Avr3a)](http://protists.ensembl.org/Phytophthora_infestans/Location/Compara_Alignments/Image?align=119329;db=core;r=supercont1.34:559462-573700)
+  * [Gene trees (Avr3a)](http://protists.ensembl.org/Phytophthora_infestans/Gene/Compara_Tree/pan_compara?db=core;g=PITG_14371;r=supercont1.34:559462-573700;t=PITG_14371T0)
+
+----
+
+<!-- .slide: data-background="./images/hutton_background.png" -->
+
+### Other sources
+
+* Genome sequencing centres, e.g.
+  * [JGI Genome Portals](http://genome.jgi.doe.gov/) - [*P. capsici*](http://genome.jgi.doe.gov/Phyca11/Phyca11.home.html)
+  * [Broad Institute](https://www.broadinstitute.org/) - (now retiring older genome sites)
+* Specialist databases, e.g.
+  * [FungiDB](http://fungidb.org/fungidb/) - fungi and oomycetes
+  * [CPGR](http://cpgr.plantbiology.msu.edu/) - not recently updated
+  * [www.nematodes.org](http://www.nematodes.org/) - NEMBASE, other nematode genomic/transcript data ([mostly unpublished](http://www.nematodes.org/bioinformatics/databases.shtml))

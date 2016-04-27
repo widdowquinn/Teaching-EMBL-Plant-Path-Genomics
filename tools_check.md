@@ -171,3 +171,15 @@ sudo python setup.py install
 ```
 
 More information can be found in the [README.md](https://github.com/widdowquinn/pyani/blob/v0.2/README.md)
+
+## MCL
+
+`MCL` is a package for Markov clustering. It is used for finding groups of related items in a graph structure, and is necessary for OrthoFinder - it is not provided by BioLinux
+
+* `MCL` [download](http://micans.org/mcl/)
+
+## OrthoFinder
+
+`OrthoFinder` is a tool for identifying sequence orthogroups, and is not provided by BioLinux
+
+* `Orthofinder` [download](https://github.com/davidemms/OrthoFinder/releases)

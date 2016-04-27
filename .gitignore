@@ -4,3 +4,7 @@
 # Exclude temporary files
 *~
 .ipynb_checkpoints
+
+# Exclude worksheet data outputs
+worksheets/data/*.fasta
+worksheets/data/*.tab

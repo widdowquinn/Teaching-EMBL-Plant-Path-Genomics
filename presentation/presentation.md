@@ -132,6 +132,8 @@ Leighton Pritchard, The James Hutton Institute
 
 ----
 
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
+
 ### Levels of genome comparison
 
 * **Bulk properties**
@@ -149,7 +151,60 @@ Leighton Pritchard, The James Hutton Institute
 
 ## Whole Genome Comparisons
 
+----
+
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
+
+### Genome organisation
+
+----
+
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
+
+### Genomovars and phylogeny
+
+----
+
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
+
+### Genome expansion
+
 ---
 
 ## Feature Comparisons
-  
+
+----
+
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
+
+### Orthology etc.
+
+----
+
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
+
+### BLAST vs RBBH
+
+---
+
+## Effector Prediction
+
+----
+
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
+
+### What makes an effector?
+
+----
+
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
+
+### Classification
+
+----
+
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
+
+### Bayes and genome context
+
+

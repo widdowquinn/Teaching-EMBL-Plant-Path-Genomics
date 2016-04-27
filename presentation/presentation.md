@@ -26,7 +26,7 @@ Leighton Pritchard, The James Hutton Institute
 
 <!-- .slide: data-background="./images/ensembl_protists.png" -->
 
-## Data Sources
+## Public Genome Data Sources
 
 ----
 
@@ -91,3 +91,51 @@ Leighton Pritchard, The James Hutton Institute
   * [FungiDB](http://fungidb.org/fungidb/) - fungi and oomycetes
   * [CPGR](http://cpgr.plantbiology.msu.edu/) - not recently updated
   * [www.nematodes.org](http://www.nematodes.org/) - NEMBASE, other nematode genomic/transcript data ([mostly unpublished](http://www.nematodes.org/bioinformatics/databases.shtml))
+
+---
+
+## Comparative Genomics  
+
+----
+
+### Why comparative genomics?
+
+* Single genomes are useful, but the real power is in genome *comparisons*
+* The combination of genomic data and comparative and evolutionary biology to address questions of genome structure, evolution and function
+
+----
+
+### Why comparative genomics?
+
+* Functional understanding of model systems (e.g. *E. coli*, *A. thaliana*, *S. cervisiae*) can be transferred to non-model systems
+* Genomic differences (SNPs, presence/absence of genes and pathways, gene family variation) may underpin phenotypic differences, including virulence and host range
+* Genomes are a record of evolutionary processes and constraints
+
+----
+
+### Genomes aren't everything…
+
+* **Context:**
+  * epigenetics
+  * tissue differentiation
+  * mesoscale systems, etc.
+* **Phenotypic plasticity, responses to:**
+  * temperature
+  * stress
+  * community, etc.
+* ***…and therefore systems biology…***
+
+----
+
+### Levels of genome comparison
+
+* **Bulk properties**
+  * k-mer comparisons
+* **Whole genome (or chromosome) comparisons**
+  * sequence similarity
+  * structure and organisation (rearrangements)
+  * GWAS (see tomorrow!)
+* **Features and functional components**
+  * number and types of feature (genes, ncRNA, regulatory elements, etc.)
+  * organisation of features (synteny, operons, regulons, etc.)
+  * functional complement, etc.

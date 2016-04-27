@@ -133,9 +133,18 @@ Leighton Pritchard, The James Hutton Institute
   * k-mer comparisons
 * **Whole genome (or chromosome) comparisons**
   * sequence similarity
-  * structure and organisation (rearrangements)
+  * structure and organisation (LGT, rearrangements)
   * GWAS (see tomorrow!)
 * **Features and functional components**
   * number and types of feature (genes, ncRNA, regulatory elements, etc.)
   * organisation of features (synteny, operons, regulons, etc.)
   * functional complement, etc.
+
+---
+
+## Whole Genome Comparisons
+
+---
+
+## Feature Comparisons
+  

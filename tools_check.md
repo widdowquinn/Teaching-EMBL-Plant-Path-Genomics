@@ -127,6 +127,47 @@ The course examples will be run in a virtual environment using Anaconda Python. 
 conda create -n pathogen_genomics python=3 biopython
 ```
 
-which will create a new virtual environment with the following essential packages:
+which will create a new virtual environment with the essential packages biopython
 
-* biopython
+## NCBI-BLAST+
+
+`BLAST+` will be required for sequence comparisons (`BLASTN` and `BLASTP`). This should be installed with BioLinux.
+
+* `BLAST+` [download](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
+
+## HMMer
+
+`HMMer` 3.1 comes with BioLinux - this should be good enough
+
+* `HMMer` [download](http://hmmer.org/)
+
+## Artemis and ACT
+
+`Artemis` is provided on BioLinux, but `ACT` is also needed. It may be installed but not listed.
+
+* `ACT` [download](http://www.sanger.ac.uk/science/tools/artemis-comparison-tool-act)
+
+## Mauve
+
+`Mauve` a tool for multiple genome alignment/detection of synteny. It is not on the BioLinux list
+
+* `Mauve` [download](http://darlinglab.org/mauve/mauve.html)
+
+## MUMmer
+
+`MUMmer` is a tool for genome sequence alignment and should be available in BioLinux
+
+* `MUMmer` [download](http://mummer.sourceforge.net/)
+
+## PyANI (**requires Python3**)
+
+`pyani` is a Python library/module for ANI comparison of genomes. To get the version needed for the worksheets, you need to get the latest version from GitHub:
+
+```
+git clone git@github.com:widdowquinn/pyani.git
+cd pyani
+git branch v0.2
+sudo python setup.py install
+```
+
+More information can be found in the [README.md](https://github.com/widdowquinn/pyani/blob/v0.2/README.md)

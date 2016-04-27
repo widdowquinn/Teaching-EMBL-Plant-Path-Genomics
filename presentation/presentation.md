@@ -6,13 +6,13 @@ Leighton Pritchard, The James Hutton Institute
 
 ---
 
-<!-- .slide: data-background="./images/hutton_background.png" -->
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
 
 ## Pathogen Genome Data
 
 ----
 
-<!-- .slide: data-background="./images/hutton_background.png" -->
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
 
 ### What can pathogen genome data do for you?
 
@@ -30,7 +30,7 @@ Leighton Pritchard, The James Hutton Institute
 
 ----
 
-<!-- .slide: data-background="./images/hutton_background.png" -->
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
 
 ### NCBI
 
@@ -45,42 +45,42 @@ Leighton Pritchard, The James Hutton Institute
 
 ----
 
-<!-- .slide: data-background="./images/hutton_background.png" -->
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
 
 ### GenBank *vs.* RefSeq
 
-* **GenBank**
-  * part of International Nucleotide Sequence Database Collaboration (INSDC)
+* [**GenBank**](http://www.ncbi.nlm.nih.gov/genbank/)
+  * part of the [International Nucleotide Sequence Database Collaboration (INSDC)](http://www.insdc.org/) between `EMBL`, `NCBI`, and `DDBJ`.
   * records 'owned' by submitter
   * may include redundant information
   
-* **RefSeq**
+* [**RefSeq**](http://www.ncbi.nlm.nih.gov/refseq/about/)
   * not part of INSDC
   * records derived from GenBank, 'owned' by NCBI
-  * intended to be non-redundant
+  * stable non-redundant foundation for functional and diversity studies
 
 ----
 
-<!-- .slide: data-background="./images/hutton_background.png" -->
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
 
 ### Ensembl
 
 [http://www.ensembl.org](http://www.ensembl.org)
 
 * Automated annotation on selected genomes
-* Specialised sub-collections
+* **Specialised sub-collections**
   * Ensembl Protists [http://protists.ensembl.org/](http://protists.ensembl.org/)
   * Ensembl Bacteria [http://bacteria.ensembl.org/](http://bacteria.ensembl.org/)
   * Ensembl Fungi [http://fungi.ensembl.org/](http://fungi.ensembl.org/)
-* Downloadable
+* **Downloadable**
   * e.g. EnsemblProtists [ftp://ftp.ensemblgenomes.org/pub/protists/](ftp://ftp.ensemblgenomes.org/pub/protists/)
-* Comparative genomics! e.g.
+* **Comparative genomics!** e.g.
   * [*Phytophthora* genomic alignments (Avr3a)](http://protists.ensembl.org/Phytophthora_infestans/Location/Compara_Alignments/Image?align=119329;db=core;r=supercont1.34:559462-573700)
   * [Gene trees (Avr3a)](http://protists.ensembl.org/Phytophthora_infestans/Gene/Compara_Tree/pan_compara?db=core;g=PITG_14371;r=supercont1.34:559462-573700;t=PITG_14371T0)
 
 ----
 
-<!-- .slide: data-background="./images/hutton_background.png" -->
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
 
 ### Other sources
 
@@ -90,13 +90,14 @@ Leighton Pritchard, The James Hutton Institute
 * Specialist databases, e.g.
   * [FungiDB](http://fungidb.org/fungidb/) - fungi and oomycetes
   * [CPGR](http://cpgr.plantbiology.msu.edu/) - not recently updated
-  * [www.nematodes.org](http://www.nematodes.org/) - NEMBASE, other nematode genomic/transcript data ([mostly unpublished](http://www.nematodes.org/bioinformatics/databases.shtml))
 
 ---
 
 ## Comparative Genomics  
 
 ----
+
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
 
 ### Why comparative genomics?
 
@@ -105,6 +106,8 @@ Leighton Pritchard, The James Hutton Institute
 
 ----
 
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
+
 ### Why comparative genomics?
 
 * Functional understanding of model systems (e.g. *E. coli*, *A. thaliana*, *S. cervisiae*) can be transferred to non-model systems
@@ -112,6 +115,8 @@ Leighton Pritchard, The James Hutton Institute
 * Genomes are a record of evolutionary processes and constraints
 
 ----
+
+<!-- .slide: data-background="./images/hutton_background.png" data-background-size="100%" -->
 
 ### Genomes aren't everything…
 

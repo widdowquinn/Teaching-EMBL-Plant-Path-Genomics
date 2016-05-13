@@ -90,6 +90,20 @@ Leighton Pritchard, The James Hutton Institute
 * Specialist databases, e.g.
   * [FungiDB](http://fungidb.org/fungidb/) - fungi and oomycetes
   * [CPGR](http://cpgr.plantbiology.msu.edu/) - not recently updated
+* Your friendly sequencing centre!
+  * [Aspera](http://asperasoft.com/) is common
+
+----
+
+### Exercises
+
+* `01-genome_data.ipynb`
+
+```
+cd worksheets
+jupyter notebook
+```
+
 
 ---
 

@@ -18,7 +18,7 @@ The Anaconda install modifies `~/.bash_profile`, changing `${PATH}`:
 export PATH="/Users/lpritc/anaconda/bin:$PATH"
 ```
 
-This takes priority over system Python, which is probably not what you want. Changing this to:
+This takes priority over system Python, which is sometimes not what you want. Changing this to:
 
 ```
 # added by Anaconda3 4.0.0 installer, modified by LP
@@ -77,7 +77,7 @@ $ source deactivate
 discarding /Users/lpritc/anaconda/envs/test/bin from PATH
 ```
 
-However, this leaves the Anaconda Python as the first one visible in `${PATH}`:
+However, when you deactivate, this leaves the Anaconda Python as the first one visible in `${PATH}`:
 
 ```
 lpritc@Totoro:~$ which python
@@ -121,7 +121,7 @@ The following packages will be downloaded:
 
 ### Virtual environment for the course
 
-The course examples will be run in a virtual environment using Anaconda Python. This can be instantiated with:
+The course examples/worksheets will be run in a virtual environment using Anaconda Python. This can be instantiated with:
 
 ```
 conda create -n pathogen_genomics python=3 biopython
@@ -131,7 +131,7 @@ which will create a new virtual environment with the essential packages biopytho
 
 ## NCBI-BLAST+
 
-`BLAST+` will be required for sequence comparisons (`BLASTN` and `BLASTP`). This should be installed with BioLinux.
+`BLAST+` will be required for sequence comparisons (`BLASTN` and `BLASTP`). This should already be installed on BioLinux.
 
 * `BLAST+` [download](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
 
@@ -143,19 +143,19 @@ which will create a new virtual environment with the essential packages biopytho
 
 ## Artemis and ACT
 
-`Artemis` is provided on BioLinux, but `ACT` is also needed. It may be installed but not listed.
+`Artemis` is provided on BioLinux, but `ACT` is also needed. It might be installed but not listed explicitly on the BioLinux pages. You can check for it with `which act`.
 
 * `ACT` [download](http://www.sanger.ac.uk/science/tools/artemis-comparison-tool-act)
 
 ## Mauve
 
-`Mauve` a tool for multiple genome alignment/detection of synteny. It is not on the BioLinux list
+`Mauve` a tool for multiple genome alignment/detection of synteny. It is not on the BioLinux list, and will probably need to be installed from the group page.
 
 * `Mauve` [download](http://darlinglab.org/mauve/mauve.html)
 
 ## MUMmer
 
-`MUMmer` is a tool for genome sequence alignment and should be available in BioLinux
+`MUMmer` is a tool for genome sequence alignment and should already be available in BioLinux
 
 * `MUMmer` [download](http://mummer.sourceforge.net/)
 
@@ -180,6 +180,10 @@ More information can be found in the [README.md](https://github.com/widdowquinn/
 
 ## OrthoFinder
 
-`OrthoFinder` is a tool for identifying sequence orthogroups, and is not provided by BioLinux
+`OrthoFinder` is a tool for identifying sequence orthogroups, and is not provided by BioLinux - this can be installed as described on the GitHub pages.
 
 * `Orthofinder` [download](https://github.com/davidemms/OrthoFinder/releases)
+
+## Git
+
+To get up-to-date slides/worksheets, the students will need to use `git` - I think this is already available on BioLinux.

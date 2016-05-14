@@ -60,8 +60,8 @@ def filter_matches(*df):
     """
     return tuple([d.drop_duplicates(subset='query_id') for d in df])
     
-# Function to parse the appropriate BLASTP data and return a dataframe of RBBH
-def find_rbbh(s1, s2, pid=0, cov=0):
+# Function to return a dataframe of RBBH from two dataframes of BLAST matches
+def find_rbbh(df1, df2, pid=0, cov=0):
     """Takes the accessions for two organisms, and 
     1. parses the appropriate BLASTP output into two dataframes, and 
        calculates coverage, discarding all but the "best" HSP, on the
@@ -70,17 +70,12 @@ def find_rbbh(s1, s2, pid=0, cov=0):
        coverage criteria.
     3. identifies RBBH from the remaining BLAST matches.
     """
-    assert s1 != s2, "Accessions should not match! %s=%s" % (s1, s2)
     assert 0 <= pid <= 100, \
         "Percentage identity should be in [0,100], got %s" % str(pid)
     assert 0 <= cov <= 100, \
         "Minimum coverage should be in [0,100], got %s" % str(cov)
-    # Read in tabular BLAST output
-    df1, df2 = read_data(s1, s2), read_data(s2, s1)
     # Filter to best HSP match only
     df1, df2 = filter_matches(df1, df2)
-    # Calculate query and subject coverage for each dataset
-    df1, df2 = calculate_coverage(df1, df2)
     # Filter datasets on minimum percentage identity and minimum coverage
     df1, df2 = filter_cov_id(pid, cov, df1, df2)
     # Identify RBBH from the two datasets on the basis of matching query and 
@@ -92,8 +87,8 @@ def find_rbbh(s1, s2, pid=0, cov=0):
                     "query_coverage_y", "subject_coverage_x",
                     "subject_coverage_y", "bitscore_x", "bitscore_y",
                     "Evalue_x", "Evalue_y"]]
-    rbbh.to_csv(os.path.join(datadir, "rbbh_%s_vs_%s.tab" % (s1, s2)),
-                sep='\t')
+    #rbbh.to_csv(os.path.join(datadir, "rbbh_%s_vs_%s.tab" % (s1, s2)),
+    #            sep='\t')
     return df1, df2, rbbh
 
 # Function to plot 2D histogram, with colorbar scale, from

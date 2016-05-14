@@ -187,3 +187,7 @@ More information can be found in the [README.md](https://github.com/widdowquinn/
 ## Git
 
 To get up-to-date slides/worksheets, the students will need to use `git` - I think this is already available on BioLinux.
+
+## Clustal Omega
+
+This is not provided in BioLinux, according to http://environmentalomics.org/bio-linux-software-list/ but can be downloaded from [http://www.clustal.org/omega/](http://www.clustal.org/omega/)

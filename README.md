@@ -1,26 +1,26 @@
 # README.md - Teaching-EMBL-Plant-Path-Genomics
 
-## Overview
+This repository contains material for the 2016 presentation of "Pathogen Genome Data" in the "Bioinformatics of Plants and Plant Pathogens" course ([website](https://www.ebi.ac.uk/training/events/2016/bioinformatics-plants-and-plant-pathogens)).
 
-This repository contains PowerPoint slides and demonstration materials for my keynote at the EMBL-EBI Plant and Pathogen Genomics workshop, 8-11 July 2014.
+This slot is 1hr long and takes the form of a slide presentation with worked examples. The worked examples for the lesson should take 15-20min each, but it is possible that the session may overrun slightly if all are attempted.
 
-## Files and Subdirectories
+The worked examples are located in the `examples` subdirectory, and cover the following activities:
 
-* `Pritchard_2014-07-08_Keynote_Cinema_Release.pptx`: The smaller slide set, used for the presentation
-* `Pritchard_2014-07-08_Keynote_Directors_Cut.pptx`: The larger slide set, containing extra tutorial material
-* `data`: directory containing demonstration data
-* `images`: directory containing image files used for the presentations
+* Exercise 01: Whole genome comparisons of bacterial plant pathogens
+* Exercise 02: CDS feature comparisons of bacterial plant pathogens
+* Exercise 03: Training/building an HMM profile with bacterial pathogen effector sequences, and using it to find new members of the family
 
-## Slides
+There are additional worksheets covering topics from the presentation, but that could not be addressed practically in the session. These are located in the `worksheets` subdirectory.
 
-There are two presentations: the "Cinema Release", and the "Director's Cut". As ever, I got overexcited and prepared far too many slides: this version of the presentation is the "Director's Cut" - it's not necessarily better, but there is more material in it. The version where I tried (and failed) to fit my presentation into 60min is the "Cinema Release".
+* Worksheet 1
+* Worksheet 2
+* Worksheet 3
 
-## Licensing
+## Obtaining materials
 
-Copyright 2014 by The James Hutton Institute, Dundee, UK. All rights reserved.
+This repository can be downloaded in its entirety using [`git`](http://blog.scottlowe.org/2015/01/14/non-programmer-git-intro/)
 
-The text/presentation material in this work is licensed under a Creative Commons Attribution 4.0 International License ([CC-BY 4.0](http://creativecommons.org/licenses/by/4.0/)).
-
-![](http://i.creativecommons.org/l/by/4.0/88x31.png)
-
-Note that some components of these materials, particularly code, may link to and use separate licences.
+```
+git clone git@github.com:widdowquinn/Teaching-EMBL-Plant-Path-Genomics.git
+cd Teaching-EMBL-Plant-Path-Genomics
+```

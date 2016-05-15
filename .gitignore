@@ -1,13 +1,16 @@
-*~
+# Exclude OSX auxiliary files
 .DS_Store
-*.aux
-*.log
-*.nav
-*.out
-*.snm
-*.synctex.gz
-*.toc
-Pritchard_2014-07-08_Keynote.pdf
-.ipynb_checkpoints/
-base_diagram_*
-top_rbh.png
+
+# Exclude temporary files
+*~
+.ipynb_checkpoints
+exercises/helpers/__pycache__/
+
+# Exclude worksheet/exercise data outputs
+worksheets/data/
+worksheets/data/
+exercises/phi_base/
+exercises/pseudomonas_blastp/B728a_rbbh_NCIMB_11764.crunch
+
+# Exclude personal information about attendees
+ParticipantResearchInfo

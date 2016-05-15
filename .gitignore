@@ -4,10 +4,14 @@
 # Exclude temporary files
 *~
 .ipynb_checkpoints
+exercises/helpers/__pycache__/
 
-# Exclude worksheet data outputs
-worksheets/data/*.fasta
-worksheets/data/*.tab
+# Exclude worksheet/exercise data outputs
+worksheets/data/
+worksheets/data/
+exercises/phi_base/
+exercises/pseudomonas_blastp/B728a_rbbh_NCIMB_11764.crunch
 
 # Exclude personal information about attendees
 ParticipantResearchInfo
+

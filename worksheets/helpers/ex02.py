@@ -137,14 +137,16 @@ def plot_scatter(col1, col2, xlab="", ylab="", header="",
 # strand) information.
 def read_genbank(*filenames):
     """Returns a dictionary of CDS annotations, where the dictionary keys
-    are the CDS protein ID accession numbers, and the values are
-    (source, start, end, strand, id) information about the CDS location
-    on the chromosome.
+    are a tuple of CDS protein ID accession numbers (which may not be unique
+    to a single genome, in RefSeq!) with the source filename stem, and the
+    values are (source, start, end, strand, id) information about the CDS
+    location on the chromosome.
         
     - *filenames, the organism's GenBank annotation files
     """
     ft_dict = {}
     for filename in filenames:
+        filestem = os.path.splitext(os.path.split(filename)[-1])[0]
         with open(filename, 'rU') as fh:
             record = SeqIO.read(fh, 'genbank')
             # Reconstruct the name in the corresponding .fna file
@@ -152,7 +154,7 @@ def read_genbank(*filenames):
                                     "ref", record.id])
             for ft in [f for f in record.features if f.type == "CDS" and 
                        "protein_id" in f.qualifiers]:
-                ft_dict[ft.qualifiers['protein_id'][0]] = \
+                ft_dict[(ft.qualifiers['protein_id'][0], filestem)] = \
                     (record_name, int(ft.location.start), 
                      int(ft.location.end), ft.location.strand)
     print("Loaded %d features" % len(ft_dict))
@@ -166,16 +168,16 @@ def split_seqid(seqid):
     return seqid.split('|')[-2]
 
 # Function to write a single line of a Pandas RBBH dataframe to file
-def write_line(line, features, fh):
+def write_line(line, features, fh, fwd, rev):
     """Write a single RBBH dataframe line to a file."""
     try:
-        ft1 = features[split_seqid(line['query_id_x'])]
+        ft1 = features[(split_seqid(line['query_id_x']), fwd)]
     except:
         print("Could not find feature for %s (skipping)" %
               line['query_id_x'])
         return
     try:
-        ft2 = features[split_seqid(line['subject_id_x'])]
+        ft2 = features[(split_seqid(line['subject_id_x']), rev)]
     except:
         print("Could not find feature for %s (skipping)" %
               line['subject_id_x'])
@@ -192,10 +194,13 @@ def write_line(line, features, fh):
 
 # Function to write .crunch output for ACT visualisation, from the
 # RBBH identified above
-def write_crunch(rbbh, features, outdir=".", filename="rbbh.crunch"):
+def write_crunch(rbbh, features, fwd, rev, outdir=".", filename="rbbh.crunch"):
     """Writes .crunch output in outdir, for those RBBH stored in the 
     passed dataframe
+
+    fwd - the filestem for the 'forward' sequence
+    rev - the filestem for the 'reverse' sequence
     """
     with open(os.path.join(outdir, filename), 'w') as fh:
-        rbbh.apply(write_line, axis=1, args=(features, fh))
+        rbbh.apply(write_line, axis=1, args=(features, fh, fwd, rev))
     print("Wrote file to %s" % os.path.join(outdir, filename))

@@ -24,7 +24,7 @@ psuffix="_protein"
 # Functions to download from NCBI/RefSeq
 function download_genomic {
   # File extensions to retrieve
-  exts=( "fna" "gff" )
+  exts=( "fna" "gff" "gbff" )
   local=${outdir}
   for ext in ${exts[@]}
   do

@@ -2,13 +2,13 @@
 
 This repository contains material for the 2016 presentation of "Pathogen Genome Data" in the "Bioinformatics of Plants and Plant Pathogens" course ([website](https://www.ebi.ac.uk/training/events/2016/bioinformatics-plants-and-plant-pathogens)).
 
-This slot is 1hr long and takes the form of a slide presentation with worked examples. The worked examples should take 15-20min each, and it is possible that the session may overrun slightly.
+This slot is 1hr long and takes the form of a slide presentation with worked examples. The worked examples for the lesson should take 15-20min each, but it is possible that the session may overrun slightly if all are attempted.
 
 The worked examples are located in the `examples` subdirectory, and cover the following activities:
 
-* Activity 1
-* Activity 2
-* Activity 3
+* Exercise 01: Whole genome comparisons of bacterial plant pathogens
+* Exercise 02: CDS feature comparisons of bacterial plant pathogens
+* Exercise 03: Training/building an HMM profile with bacterial pathogen effector sequences, and using it to find new members of the family
 
 There are additional worksheets covering topics from the presentation, but that could not be addressed practically in the session. These are located in the `worksheets` subdirectory.
 

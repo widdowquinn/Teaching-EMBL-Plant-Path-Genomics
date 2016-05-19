@@ -4,6 +4,9 @@
 #
 # Ad hoc script to correct formatting errors in the PHI-Base download for
 # exercise 3
+#
+# (c) The James Hutton Institute 2016
+# Author: Leighton Pritchard
 
 from Bio import SeqIO
 

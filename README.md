@@ -12,11 +12,9 @@ The worked examples are located in the `examples` subdirectory, and cover the fo
 * Exercise 02: CDS feature comparisons of bacterial plant pathogens
 * Exercise 03: Training/building an HMM profile with bacterial pathogen effector sequences, and using it to find new members of the family
 
-There are additional worksheets covering topics from the presentation, but that could not be addressed practically in the session. These are located in the `worksheets` subdirectory.
+There are additional worksheets covering topics from or related to the presentation, but that could not be addressed practically in the session. These are located in the `worksheets` subdirectory.
 
-* Worksheet 1
-* Worksheet 2
-* Worksheet 3
+* Worksheet 1: Downloading (many) genomes from NCBI using Biopython
 
 ## Obtaining materials
 

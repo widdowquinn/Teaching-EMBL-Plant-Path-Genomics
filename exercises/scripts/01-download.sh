@@ -2,9 +2,14 @@
 #
 # 01-download.sh
 #
-# Downloads the source data files for exercise 01, using wget. If this
-# script is not run in the exercises directory, the subdirectory pseudomonas
-# will need to be moved to that location once the download is complete.
+# Downloads the source data files for exercise 01, using wget. 
+#
+# Run from the exercises directory with
+# sh scripts/01-download.sh
+#
+# If this script is not run in the exercises directory, the subdirectory
+# pseudomonas will need to be moved to that location once the download is
+# complete.
 #
 # (C) The James Hutton Institute 2016
 # Author: Leighton Pritchard

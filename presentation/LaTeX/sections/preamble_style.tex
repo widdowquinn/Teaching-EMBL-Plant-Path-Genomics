@@ -37,7 +37,6 @@
 \setbeamercolor{section in head/foot}{fg=hutton_purple}
 \setbeamercolor{normal text}{fg=black}
 \setbeamercolor{frametitle}{fg=hutton_purple}
-\setbeamerfont{block title}{size={}}
 \setbeamerfont{author}{size=\footnotesize}
 \setbeamerfont{institute}{size=\tiny}
 \setbeamerfont{date}{size=\footnotesize}
@@ -57,8 +56,15 @@
 \setbeamercolor{enumerate subitem}{fg=hutton_purple}
 \setbeamercolor{enumerate subsubitem}{fg=hutton_purple}
 \setbeamercolor{enumerate subsubsubitem}{fg=hutton_purple}
+% ALERTS AND BLOCKS
 \setbeamercolor{alerted text}{fg=hutton_green}
 \setbeamerfont{alerted text}{series=\bfseries}
+\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg!75!black}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg!75!black}
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!10!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
 % This command makes sure that acrobat reader doesn't change the colours of the slide
 % when there are figures with transparencies.
 \pdfpageattr {/Group << /S /Transparency /I true /CS /DeviceRGB>>}
@@ -101,5 +107,8 @@
 \makeatletter
 \def\verbatim{\tiny\@verbatim \frenchspacing\@vobeyspaces \@xverbatim}
 \makeatother
+
+% Inner Theme for Blocks
+\useinnertheme{rectangles}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

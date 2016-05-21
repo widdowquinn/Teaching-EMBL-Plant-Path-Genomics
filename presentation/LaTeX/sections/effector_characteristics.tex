@@ -82,12 +82,34 @@
   \end{center}
 \end{frame}
 
+% EFFECTOR PREDICTORS
+\begin{frame}
+  \frametitle{Effector prediction tools (online)
+  \footnote{\tiny{\href{http://dx.doi.org/10.1371/journal.ppat.1004806}{Sperschneider \textit{et al.} (2015) \textit{PLoS Pathogens} doi:10.1371/journal.ppat.1004806}}}
+  \footnote{\tiny{\href{http://dx.doi.org/10.3389/fpls.2016.00126}{Sonah \textit{et al.} (2016) \textit{Front. Plant Sci.} doi:10.3389/fpls.2016.00126}}}
+  }
+  \begin{alertblock}{Bacterial Type III Effectors}
+    \begin{itemize}
+      \item \textcolor{hutton_purple}{\href{http://www.effectors.org/method/effectivet3}{EffectiveT3}}
+      \item \textcolor{hutton_purple}{\href{http://gecco.org.chemie.uni-frankfurt.de/T3SS_prediction/T3SS_prediction.html}{modlab}}
+      \item \textcolor{hutton_purple}{\href{http://effectors.bic.nus.edu.sg/T3SEdb/predict.php}{T3SEdb}}
+    \end{itemize}
+  \end{alertblock}
+  \begin{block}{Fungal/Oomycete Effectors}
+    \begin{itemize}
+      \item \textcolor{hutton_purple}{\href{http://effectorp.csiro.au/}{EffectorP}}
+      \item \textcolor{hutton_purple}{\href{http://bit.ly/1XHf0kM}{Galaxy Toolshed RxLR predictor}}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
 
 % WHAT DO WE LOOK FOR
 \begin{frame}
   \frametitle{What do we look for?
   \footnote{\tiny{\href{http://dx.doi.org/10.1007/978-1-62703-986-4_4}{Pritchard \& Broadhurst (2014) \textit{Methods Mol. Biol.} doi:10.1007/978-1-62703-986-4\_4}}}
   }
+  What if someone hasn't built a classifier for your protein family?
       \begin{itemize}  
         \item \textcolor{hutton_green}{Tests are for protein family membership and/or `effector-like' functional signal}
         \item \textcolor{hutton_blue}{The same as any sequence classification problem (functional annotation)}
@@ -143,9 +165,9 @@
   \end{itemize}
 \end{frame}
 
-% FINDING A DISTANCE
+% CHOOSING A DISTANCE
 \begin{frame}
-  \frametitle{Finding a distance
+  \frametitle{Choosing a distance
   \footnote{\tiny{\href{http://dx.doi.org/10.1007/978-1-62703-986-4_4}{Pritchard \& Broadhurst (2014) \textit{Methods Mol. Biol.} doi:10.1007/978-1-62703-986-4\_4}}}
 }
   \begin{columns}[T]
@@ -162,87 +184,87 @@
   \end{columns}  
 \end{frame}
 
-% STATISTICS OF EFFECTOR FINDING 5
+% ARE YOU IN OR OUT? 1
 \begin{frame}
-  \frametitle{The statistics of effector finding
+  \frametitle{Are you in or out?
   \footnote{\tiny{\href{http://dx.doi.org/10.1007/978-1-62703-986-4_4}{Pritchard \& Broadhurst (2014) \textit{Methods Mol. Biol.} doi:10.1007/978-1-62703-986-4\_4}}}
 }
   \begin{itemize}
     \item \textcolor{hutton_green}{The boundary (distance) classifies sequences as `in' or `out'}
-    \item Sequences are either \textcolor{red}{in the class} or \textcolor{blue}{not in the class}
-    \item \textcolor{hutton_purple}{Changing distance/boundary changes the number of correct classifications}
+    \item Sequences are predicted to be \textit{either} \textcolor{red}{in the class} \textit{or} \textcolor{blue}{not in the class}
+    \item \textcolor{hutton_purple}{Changing distance/boundary changes classification}
   \end{itemize}
   \includegraphics[width=1\textwidth]{images/finding_effectors5}    
 \end{frame}
 
-% STATISTICS OF EFFECTOR FINDING 6
+% TP/TN/FP/FN
 \begin{frame}
-  \frametitle{The statistics of effector finding
+  \frametitle{TP/TN/FP/FN
   \footnote{\tiny{\href{http://dx.doi.org/10.1007/978-1-62703-986-4_4}{Pritchard \& Broadhurst (2014) \textit{Methods Mol. Biol.} doi:10.1007/978-1-62703-986-4\_4}}}
 }
   \begin{itemize}
     \item \textcolor{hutton_green}{The boundary (distance) classifies sequences as `in' or `out'}
-    \item Sequences are either \textcolor{red}{in the class} or \textcolor{blue}{not in the class}
-    \item \textcolor{hutton_purple}{Changing distance/boundary changes the number of correct classifications}
+    \item Sequences are predicted to be \textit{either} \textcolor{red}{in the class} \textit{or} \textcolor{blue}{not in the class}
+    \item \textcolor{hutton_purple}{Changing distance/boundary changes classification}
   \end{itemize}
   \includegraphics[width=1\textwidth]{images/finding_effectors6}    
 \end{frame}
 
-% STATISTICS OF EFFECTOR FINDING 7
+% FPR/FNR/Sn/Sp/FDR
 \begin{frame}
-  \frametitle{The statistics of effector finding
+  \frametitle{FPR/FNR/Sn/Sp/FDR
   \footnote{\tiny{\href{http://dx.doi.org/10.1007/978-1-62703-986-4_4}{Pritchard \& Broadhurst (2014) \textit{Methods Mol. Biol.} doi:10.1007/978-1-62703-986-4\_4}}}
 }
   \begin{itemize}
     \item \textcolor{hutton_green}{The boundary (distance) classifies sequences as `in' or `out'}
-    \item Sequences are either \textcolor{red}{in the class} or \textcolor{blue}{not in the class}
-    \item \textcolor{hutton_purple}{Changing distance/boundary changes the number of correct classifications}
+    \item Sequences are predicted to be \textit{either} \textcolor{red}{in the class} \textit{or} \textcolor{blue}{not in the class}
+    \item \textcolor{hutton_purple}{Changing distance/boundary changes classification}
   \end{itemize}
   \includegraphics[width=1\textwidth]{images/finding_effectors7}    
 \end{frame}
 
-% STATISTICS OF EFFECTOR FINDING 8
+% SMALL BOUNDARY
 \begin{frame}
-  \frametitle{The statistics of effector finding
+  \frametitle{Small Boundary
   \footnote{\tiny{\href{http://dx.doi.org/10.1007/978-1-62703-986-4_4}{Pritchard \& Broadhurst (2014) \textit{Methods Mol. Biol.} doi:10.1007/978-1-62703-986-4\_4}}}
 }
   \begin{itemize}
     \item \textcolor{hutton_green}{The boundary (distance) classifies sequences as `in' or `out'}
-    \item Sequences are either \textcolor{red}{in the class} or \textcolor{blue}{not in the class}
-    \item \textcolor{hutton_purple}{Changing distance/boundary changes the number of correct classifications}
+    \item Sequences are predicted to be \textit{either} \textcolor{red}{in the class} \textit{or} \textcolor{blue}{not in the class}
+    \item \textcolor{hutton_purple}{Changing distance/boundary changes classification}
   \end{itemize}
   \includegraphics[width=1\textwidth]{images/finding_effectors8}    
 \end{frame}
 
-% STATISTICS OF EFFECTOR FINDING 9
+% MEDIUM BOUNDARY
 \begin{frame}
-  \frametitle{The statistics of effector finding
+  \frametitle{Medium boundary
   \footnote{\tiny{\href{http://dx.doi.org/10.1007/978-1-62703-986-4_4}{Pritchard \& Broadhurst (2014) \textit{Methods Mol. Biol.} doi:10.1007/978-1-62703-986-4\_4}}}
 }
   \begin{itemize}
     \item \textcolor{hutton_green}{The boundary (distance) classifies sequences as `in' or `out'}
-    \item Sequences are either \textcolor{red}{in the class} or \textcolor{blue}{not in the class}
-    \item \textcolor{hutton_purple}{Changing distance/boundary changes the number of correct classifications}
+    \item Sequences are predicted to be \textit{either} \textcolor{red}{in the class} \textit{or} \textcolor{blue}{not in the class}
+    \item \textcolor{hutton_purple}{Changing distance/boundary changes classification}
   \end{itemize}
   \includegraphics[width=1\textwidth]{images/finding_effectors9}    
 \end{frame}
 
-% STATISTICS OF EFFECTOR FINDING 10
+% LARGE BOUNDARY
 \begin{frame}
-  \frametitle{The statistics of effector finding
+  \frametitle{Large boundary
   \footnote{\tiny{\href{http://dx.doi.org/10.1007/978-1-62703-986-4_4}{Pritchard \& Broadhurst (2014) \textit{Methods Mol. Biol.} doi:10.1007/978-1-62703-986-4\_4}}}
 }
   \begin{itemize}
     \item \textcolor{hutton_green}{The boundary (distance) classifies sequences as `in' or `out'}
-    \item Sequences are either \textcolor{red}{in the class} or \textcolor{blue}{not in the class}
-    \item \textcolor{hutton_purple}{Changing distance/boundary changes the number of correct classifications}
+    \item Sequences are predicted to be \textit{either} \textcolor{red}{in the class} \textit{or} \textcolor{blue}{not in the class}
+    \item \textcolor{hutton_purple}{Changing distance/boundary changes classification}
   \end{itemize}
   \includegraphics[width=1\textwidth]{images/finding_effectors10}    
 \end{frame}
 
-% CROSSVALIDATION
+% CHOOSING A BOUNDARY
 \begin{frame}
-  \frametitle{Crossvalidation
+  \frametitle{Choosing a boundary
   \footnote{\tiny{\href{http://dx.doi.org/10.1007/978-1-62703-986-4_4}{Pritchard \& Broadhurst (2014) \textit{Methods Mol. Biol.} doi:10.1007/978-1-62703-986-4\_4}}}
 }
   \begin{columns}[T]
@@ -250,13 +272,35 @@
       \begin{itemize}  
         \item \textcolor{hutton_green}{Assign known `positive` and `negative' examples}
         \item \textcolor{hutton_blue}{Vary `distance' and measure predictive performance (F-measure, AUC, $\ldots$}
-        \item \textcolor{hutton_purple}{Choose the distance that gives the best performance}
+        \item \textcolor{hutton_purple}{Choose the distance that gives the `best' performance}
         \end{itemize}  
       \end{column}
     \begin{column}{5cm}  
       \includegraphics[width=1\textwidth]{images/finding_effectors11}    
     \end{column}
   \end{columns} 
+\end{frame}
+
+% CROSSVALIDATION
+\begin{frame}
+  \frametitle{Crossvalidation
+    \footnote{\tiny{\href{http://dx.doi.org/10.1007/978-1-62703-986-4_4}{Pritchard \& Broadhurst (2014) \textit{Methods Mol. Biol.} doi:10.1007/978-1-62703-986-4\_4}}}
+}
+      \begin{itemize}  
+        \item \textcolor{hutton_green}{Estimation of classifier performance depends on:}
+          \begin{itemize}
+            \item Boundary choice/distance measure
+            \item Composition of training set (`positives' and `negatives')
+          \end{itemize}
+        \item \textcolor{hutton_blue}{Cross-validation gives objective estimate of performance}
+        \item \textcolor{hutton_purple}{Many strategies (beyond today's scope), including:}
+          \begin{itemize}
+            \item leave-one-out (LOO)
+            \item $k$-fold crossvalidation
+            \item repeated (random) subsampling
+          \end{itemize}
+        \item \textcolor{red}{Always test against a \textit{hold-out set} (not used to train the classifier)}
+        \end{itemize}          
 \end{frame}
 
 % POST-CROSSVALIDATION
@@ -266,9 +310,9 @@
 }
   \begin{itemize}
     \item \textcolor{hutton_green}{Crossvalidation gives `best' method \& parameters}
-    \item Apply `best' method to \textit{unseen} data for \textcolor{red}{estimated} performance metrics
     \item \textcolor{hutton_purple}{Apply `best' method to complete dataset for prediction}
   \end{itemize}
-  \includegraphics[width=1\textwidth]{images/finding_effectors12}    
+  \includegraphics[width=1\textwidth]{images/finding_effectors12}    \\
+  \textcolor{red}{BEWARE THE BASELINE EFFECT!}
 \end{frame}
 

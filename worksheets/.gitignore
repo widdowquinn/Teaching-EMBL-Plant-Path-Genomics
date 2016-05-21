@@ -1,0 +1,4 @@
+# Exclude worksheet output data (except where provided)
+Pantoea_agglomerans
+prokka_out
+roary_out

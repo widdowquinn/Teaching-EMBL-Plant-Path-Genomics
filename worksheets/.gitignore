@@ -1,4 +1,9 @@
 # Exclude worksheet output data (except where provided)
 Pantoea_agglomerans
+Pantoea_agglomerans_ANIm
 prokka_out
 roary_out
+
+# Exclude Python files
+*.pyc
+__pycache__

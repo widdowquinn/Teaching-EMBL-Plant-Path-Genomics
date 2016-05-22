@@ -14,9 +14,9 @@ The worked examples are located in the `examples` subdirectory, and cover the fo
 
 There are additional worksheets covering topics from or related to the presentation, but that could not be addressed practically in the session. These are located in the `worksheets` subdirectory.
 
-* Worksheet 1: Downloading (many) genomes from NCBI using Biopython
-* Worksheet 2: Using `Prokka` and `Roary` to annotate pathogen genomes and calculate a pangenome
-* Worksheet 3: Interpreting effector prediction with the baserate fallacy and Bayes' Theorem
+* Worksheet 01: Downloading (many) genomes from NCBI using Biopython
+* Worksheet 02: Using `Prokka` and `Roary` to annotate pathogen genomes and calculate a pangenome
+* Worksheet 03: Interpreting effector prediction with the baserate fallacy and Bayes' Theorem
 
 ## Run these notebooks
 

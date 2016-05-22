@@ -1,6 +1,6 @@
 # README.md - Teaching-EMBL-Plant-Path-Genomics
 
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/widdowquinn/Teaching-EMBL-Plant-Path-Genomics)
+## Introduction
 
 This repository contains material for the 2016 presentation of "Pathogen Genome Data" in the "Bioinformatics of Plants and Plant Pathogens" course ([website](https://www.ebi.ac.uk/training/events/2016/bioinformatics-plants-and-plant-pathogens)).
 
@@ -16,6 +16,14 @@ There are additional worksheets covering topics from or related to the presentat
 
 * Worksheet 1: Downloading (many) genomes from NCBI using Biopython
 * Worksheet 2: Using `Prokka` and `Roary` to annotate pathogen genomes and calculate a pangenome
+* Worksheet 3: Interpreting effector prediction with the baserate fallacy and Bayes' Theorem
+
+## Run these notebooks
+
+You can run the exercise and worksheet notebooks in an interactive environment in your browser, using [MyBinder](http://mybinder.org). To do so, simply click on the `launch binder` button, below.
+
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/widdowquinn/Teaching-EMBL-Plant-Path-Genomics)
+
 
 ## Obtaining materials
 

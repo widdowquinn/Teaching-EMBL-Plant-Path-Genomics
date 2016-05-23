@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains material for the 2016 presentation of "Pathogen Genome Data" in the "Bioinformatics of Plants and Plant Pathogens" course ([website](https://www.ebi.ac.uk/training/events/2016/bioinformatics-plants-and-plant-pathogens)).
+This repository contains material for the 2016 presentation of "Pathogen Genome Data" in the "Bioinformatics of Plants and Plant Pathogens" course ([website](http://www.ebi.ac.uk/training/events/2016/bioinformatics-plants-and-plant-pathogens-2016)).
 
 This slot is 1hr long and takes the form of a slide presentation with worked examples. The worked examples for the lesson should take 15-20min each, but it is possible that the session may overrun slightly if all are attempted.
 
